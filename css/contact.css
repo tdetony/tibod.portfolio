@@ -1,0 +1,64 @@
+
+    
+    #textofcontact {
+        width: 40vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        line-height: 20px;
+
+    
+    }
+    
+    #divcopy{
+        background: #fff;
+        mix-blend-mode: difference;
+    }
+    
+    
+    body {
+        position: relative;
+        top:24vh;
+        left:9vw;
+        overflow-x: hidden;
+    }
+    
+    .imgpetit{
+        width:23vh;
+        position: fixed;
+        z-index: -2;
+    }
+    
+    #lestextes{
+        display: flex;
+        gap: 50vh;
+        flex-direction: column;
+        
+    }
+    
+    #copyrights{
+        position: fixed;
+          top: 85%;
+          left: 8%;
+          color: black;
+          font-weight: lighter;   
+           font-size: 1.5vh;
+    
+      }
+    
+    @media screen and (max-width: 460px) {
+        #textofcontact {
+            width: 78vw;
+        }
+    
+        #laphoto > img {
+            width: 54vw !important;
+            z-index: -2;
+            position: absolute;
+            top: 97% !important;
+            /* left: 24%; */
+            left: 27% !important;
+        }
+    }
+    
+    
+    

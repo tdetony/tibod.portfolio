@@ -1,0 +1,262 @@
+
+h3{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.flex {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#left_part_fill {
+    width: 50%;
+    height: 100vh;
+}
+
+#right_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 50px 0px;
+    gap: 20px;
+    justify-content: space-between;
+    width: 50%;
+    height: fit-content;
+z-index: -1;
+}
+#left_part{
+    z-index: -2;
+    }
+
+.item {
+    z-index: 5;
+    width: 55vh;
+    height: 65vh;
+    /* background-color: green; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+#right_part > div:nth-child(1){
+    background-image: url("../img/proj3-1.png");
+}
+#right_part > div:nth-child(2){
+    background-image: url("../img/proj3-2.png");
+}
+#right_part > div:nth-child(3){
+    background-image: url("../img/proj3-3.png");
+}
+#right_part > div:nth-child(4){
+    background-image: url("../img/proj3-4.png");
+}
+#right_part > div:nth-child(5){
+    background-image: url("../img/proj3-5.jpg");
+}
+
+#left_part {
+    position: fixed;
+    /* background-color: blueviolet; */
+    background-image: url("../img/proj3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+#left_part{
+    z-index: -1;
+}
+#right_part {
+    z-index: 0;
+}
+#header{
+    z-index: 1;
+}
+
+
+#description h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:5vh;
+    
+}
+#description p, #description > span > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size:1.6vh;
+    line-height: 1.4;
+}
+
+#description{
+    width:70%;
+    margin-top:20px;
+}
+#description > span > a{
+    color:#E9232A;
+    display: flex;
+    margin-top: -15px;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 1100px) {
+    #left_part_fill {
+        display: none;
+    }
+    #left_part{
+        position: fixed;
+        width: 106vw;
+        height: 50vh;
+    }
+    .flex {
+       flex-direction: column;
+    }
+
+    #right_part {
+        width: 100%;
+        background: none;
+        margin-top: 43vh;
+  }
+
+  #description {
+    width: 85%;
+    margin-top: 20px;
+    z-index:2;
+}
+#copyrights {
+    display: none;
+}
+#left_part{
+    z-index: -1;
+}
+#right_part {
+    z-index: 0;
+}
+#header{
+    z-index: 1;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+    .item{
+        z-index: 5;
+        width: 44vh;
+        height: 55vh;
+        /* background-color: green; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #right_part{
+        margin-top: 33vh;
+        gap:0;
+    }
+
+    #description{
+        margin-top: 13vh;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .item{
+        z-index: 5;
+        width: 44vh;
+        height: 65vh;
+        /* background-color: green; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #right_part{
+        margin-top: 33vh;
+        gap:0;
+    }
+
+    #description h1{
+        font-size: 4vh;
+    }
+
+    .item{
+        width: 40vh;
+        height: 40vh;
+    }
+
+    #description{
+        margin-top: 13vh;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    
+
+    #left_part {
+        position: fixed;
+        width: 100vw;
+        height: 57vh;
+    }
+    .item {
+        width: 31vh;
+        height: 40vh;
+    }
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+    
+    #description h1 {
+        font-size: 3.5vh;
+    }
+    
+}
+
+
+@media screen and (max-width: 300px) {
+    
+    .item {
+        width: 27vh;
+        height: 34vh;
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+    
+    #description h1 {
+        font-size: 3vh;
+    }
+    #left_part {
+        position: fixed;
+        width: 100vw;
+        height: 46vh;
+    }
+    #right_part {
+        margin-top: 24vh;
+    }
+    .item {
+        width: 24vh;
+        height: 34vh;
+    }
+    #description {
+        margin-top: 6vh;
+    }
+    #header_top > div a {
+        font-size: 15px;
+    }
+}

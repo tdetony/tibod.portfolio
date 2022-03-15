@@ -1,0 +1,375 @@
+
+h3{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.flex {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#left_part_fill {
+    width: 50%;
+    height: 100vh;
+}
+
+#right_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 50px 0px;
+    gap: 20px;
+    justify-content: space-between;
+    width: 50%;
+    height: fit-content;
+z-index: -1
+;}
+
+#left_part{
+z-index: -2;
+}
+.item {
+    z-index: 5;
+    width: 42vw;
+    height: 72vh;
+    /* background-color: green; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+#right_part > div:nth-child(1){
+    background-image: url("../img/proj7-1.png");
+    width:25vw;
+}
+#right_part > div:nth-child(2){
+    background-image: url("../img/proj7-2.jpg");
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+#right_part > div:nth-child(3){
+    background-image: url("../img/proj7-3.png");
+}
+#right_part > div:nth-child(4){
+    background-image: url("../img/proj7-4.jpg");
+    width: 30vw;
+}
+#right_part > div:nth-child(5){
+    background-image: url("../img/proj7-5.png");
+}
+#right_part > div:nth-child(6){
+    background-image: url("../img/proj7-6.png");
+    width: 57vw;    
+}
+#right_part > div:nth-child(7){
+    background-image: url("../img/proj7-7.png");
+    width: 70vw;
+height: 30vh;
+}
+#right_part > div:nth-child(8){
+    background-image: url("../img/proj7-8.png");
+}
+#right_part > div:nth-child(9){
+    background-image: url("../img/proj7-9.png");
+    height: 35vh;
+
+}
+#right_part > div:nth-child(10){
+    background-image: url("../img/proj7-10.png");
+    margin-bottom: 5vh;
+}
+
+#left_part{
+    z-index: -1;
+}
+#right_part {
+    z-index: 0;
+}
+#header{
+    z-index: 1;
+}
+
+
+#left_part {
+    position: fixed;
+    /* background-color: blueviolet; */
+    background-image: url("../img/proj7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+
+#description h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:5vh;
+    
+}
+#description p, #description > span > a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size:1.6vh;
+    line-height: 1.4;
+}
+
+#description{
+    width:70%;
+    margin-top:20px;
+}
+#description > span > a{
+    color:#ff0000;
+    display: flex;
+    margin-top: -15px;
+
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 1100px) {
+    #left_part_fill {
+        display: none;
+    }
+
+    #left_part{
+        position: fixed;
+        width: 106vw;
+        height: 50vh;
+    }
+    .flex {
+       flex-direction: column;
+    }
+
+    #right_part {
+        width: 100%;
+        background: none;
+        margin-top: 43vh;
+  }
+
+  #description {
+    width: 85%;
+    margin-top: 20px;
+    z-index:2;
+}
+#copyrights {
+    display: none;
+}
+
+    #left_part{
+        z-index: -1;
+    }
+    #right_part {
+        z-index: 0;
+    }
+    #header{
+        z-index: 1;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .item{
+        z-index: 5;
+        width: 44vh;
+        height: 55vh;
+        /* background-color: green; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #right_part{
+        margin-top: 33vh;
+        gap:0;
+    }
+
+    #description{
+        margin-top: 13vh;
+    }
+}
+#right_part > div:nth-child(1) {
+    width: 65vw;
+}
+#right_part > div:nth-child(2) {
+    width: 80vw;
+}
+#right_part > div:nth-child(4) {
+    background-image: url(../img/proj7-4.jpg);
+    /* width: 30vw; */
+}
+#right_part > div:nth-child(4) {
+    width: 85vw;
+    margin-bottom: 10vh;;
+}
+#right_part > div:nth-child(5) {
+    height: 85vh;
+}
+#right_part > div:nth-child(6) {
+    width: 110vw;
+}
+#right_part > div:nth-child(3) {
+    width: 80vw;
+    margin-bottom: 10vh;
+
+}
+#right_part > div:nth-child(8) {
+    width: 80vw;
+}
+
+#right_part > div:nth-child(9) {
+    height: 25vh;
+    margin-bottom: 5vh;
+    width: 70vw;
+
+}
+#right_part > div:nth-child(7) {
+width: 105vw;
+height: 40vh;
+
+}
+
+#right_part > div:nth-child(10) {
+    height: 50vh;
+    width:103vw;
+}
+.item {
+/* width: 40vh; */
+height: 48vh;
+}
+@media screen and (max-width: 430px) {
+    .item{
+        z-index: 5;
+        width: 44vh;
+        height: 65vh;
+        /* background-color: green; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    #right_part > div:nth-child(1) {
+        width: 65vw;
+    }
+    #right_part > div:nth-child(4) {
+        background-image: url(../img/proj7-4.jpg);
+        /* width: 30vw; */
+    }
+    #right_part > div:nth-child(4) {
+        width: 85vw;
+        margin-bottom: 10vh;;
+    }
+    #right_part > div:nth-child(5) {
+        height: 85vh;
+    }
+    #right_part > div:nth-child(6) {
+        width: 110vw;
+    }
+
+    #right_part > div:nth-child(9) {
+        height: 29vh;
+        margin-bottom: 5vh;
+
+    }
+#right_part > div:nth-child(7) {
+    width: 105vw;
+    height: 60vh;}
+
+    #right_part > div:nth-child(10) {
+        height: 50vh;
+        width:103vw;
+    }
+.item {
+    /* width: 40vh; */
+    height: 48vh;
+}
+    #right_part{
+        margin-top: 33vh;
+        gap:0;
+    }
+
+    #description h1{
+        font-size: 4vh;
+    }
+
+    .item{
+        width: 40vh;
+        height: 48vh;
+    }
+
+    #description{
+        margin-top: 13vh;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    
+
+    #left_part {
+        position: fixed;
+        width: 100vw;
+        height: 57vh;
+    }
+    .item {
+        width: 31vh;
+        height: 40vh;
+    }
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+    
+    #description h1 {
+        font-size: 3.5vh;
+    }
+    
+}
+
+
+@media screen and (max-width: 300px) {
+    
+    .item {
+        width: 27vh;
+        height: 34vh;
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+    
+    #description h1 {
+        font-size: 3vh;
+    }
+    #left_part {
+        position: fixed;
+        width: 100vw;
+        height: 46vh;
+    }
+    #right_part {
+        margin-top: 24vh;
+    }
+    .item {
+        width: 24vh;
+        height: 34vh;
+    }
+    #description {
+        margin-top: 6vh;
+    }
+    #header_top > div a {
+        font-size: 15px;
+    }
+}
